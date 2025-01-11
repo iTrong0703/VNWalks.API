@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VNWalks.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+218e678e718ee1ea514529ebdda873c980973a6e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5242ff85d8d6a2ddd9b55deee7fb0a306d9ad964")]
 [assembly: System.Reflection.AssemblyProductAttribute("VNWalks.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VNWalks.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
