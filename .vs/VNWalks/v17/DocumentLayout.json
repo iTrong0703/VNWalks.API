@@ -7,6 +7,26 @@
       "RelativeMoniker": "D:0:0:{3FFD5BEA-3973-4E53-8699-27F769576800}|VNWalks.API\\VNWalks.API.csproj|solutionrelative:vnwalks.api\\controllers\\regionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{3FFD5BEA-3973-4E53-8699-27F769576800}|VNWalks.API\\VNWalks.API.csproj|d:\\workspace\\vnwalks\\vnwalks\\vnwalks.api\\mappings\\automapperprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3FFD5BEA-3973-4E53-8699-27F769576800}|VNWalks.API\\VNWalks.API.csproj|solutionrelative:vnwalks.api\\mappings\\automapperprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3FFD5BEA-3973-4E53-8699-27F769576800}|VNWalks.API\\VNWalks.API.csproj|d:\\workspace\\vnwalks\\vnwalks\\vnwalks.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3FFD5BEA-3973-4E53-8699-27F769576800}|VNWalks.API\\VNWalks.API.csproj|solutionrelative:vnwalks.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3FFD5BEA-3973-4E53-8699-27F769576800}|VNWalks.API\\VNWalks.API.csproj|d:\\workspace\\vnwalks\\vnwalks\\vnwalks.api\\models\\domain\\region.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3FFD5BEA-3973-4E53-8699-27F769576800}|VNWalks.API\\VNWalks.API.csproj|solutionrelative:vnwalks.api\\models\\domain\\region.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3FFD5BEA-3973-4E53-8699-27F769576800}|VNWalks.API\\VNWalks.API.csproj|d:\\workspace\\vnwalks\\vnwalks\\vnwalks.api\\repositories\\sqlregionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3FFD5BEA-3973-4E53-8699-27F769576800}|VNWalks.API\\VNWalks.API.csproj|solutionrelative:vnwalks.api\\repositories\\sqlregionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3FFD5BEA-3973-4E53-8699-27F769576800}|VNWalks.API\\VNWalks.API.csproj|d:\\workspace\\vnwalks\\vnwalks\\vnwalks.api\\repositories\\iregionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3FFD5BEA-3973-4E53-8699-27F769576800}|VNWalks.API\\VNWalks.API.csproj|solutionrelative:vnwalks.api\\repositories\\iregionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3FFD5BEA-3973-4E53-8699-27F769576800}|VNWalks.API\\VNWalks.API.csproj|d:\\workspace\\vnwalks\\vnwalks\\vnwalks.api\\models\\dto\\updateregionrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3FFD5BEA-3973-4E53-8699-27F769576800}|VNWalks.API\\VNWalks.API.csproj|solutionrelative:vnwalks.api\\models\\dto\\updateregionrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -17,10 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{3FFD5BEA-3973-4E53-8699-27F769576800}|VNWalks.API\\VNWalks.API.csproj|d:\\workspace\\vnwalks\\vnwalks\\vnwalks.api\\models\\dto\\regiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3FFD5BEA-3973-4E53-8699-27F769576800}|VNWalks.API\\VNWalks.API.csproj|solutionrelative:vnwalks.api\\models\\dto\\regiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3FFD5BEA-3973-4E53-8699-27F769576800}|VNWalks.API\\VNWalks.API.csproj|d:\\workspace\\vnwalks\\vnwalks\\vnwalks.api\\models\\domain\\region.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3FFD5BEA-3973-4E53-8699-27F769576800}|VNWalks.API\\VNWalks.API.csproj|solutionrelative:vnwalks.api\\models\\domain\\region.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3FFD5BEA-3973-4E53-8699-27F769576800}|VNWalks.API\\VNWalks.API.csproj|d:\\workspace\\vnwalks\\vnwalks\\vnwalks.api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 15,
           "Children": [
             {
               "$type": "Bookmark",
@@ -67,6 +83,58 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "AutoMapperProfiles.cs",
+              "DocumentMoniker": "D:\\Workspace\\VNWalks\\VNWalks\\VNWalks.API\\Mappings\\AutoMapperProfiles.cs",
+              "RelativeDocumentMoniker": "VNWalks.API\\Mappings\\AutoMapperProfiles.cs",
+              "ToolTip": "D:\\Workspace\\VNWalks\\VNWalks\\VNWalks.API\\Mappings\\AutoMapperProfiles.cs",
+              "RelativeToolTip": "VNWalks.API\\Mappings\\AutoMapperProfiles.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T17:04:48.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Workspace\\VNWalks\\VNWalks\\VNWalks.API\\Program.cs",
+              "RelativeDocumentMoniker": "VNWalks.API\\Program.cs",
+              "ToolTip": "D:\\Workspace\\VNWalks\\VNWalks\\VNWalks.API\\Program.cs",
+              "RelativeToolTip": "VNWalks.API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T17:10:35.619Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SQLRegionRepository.cs",
+              "DocumentMoniker": "D:\\Workspace\\VNWalks\\VNWalks\\VNWalks.API\\Repositories\\SQLRegionRepository.cs",
+              "RelativeDocumentMoniker": "VNWalks.API\\Repositories\\SQLRegionRepository.cs",
+              "ToolTip": "D:\\Workspace\\VNWalks\\VNWalks\\VNWalks.API\\Repositories\\SQLRegionRepository.cs",
+              "RelativeToolTip": "VNWalks.API\\Repositories\\SQLRegionRepository.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAA1wB4AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T16:06:13.233Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IRegionRepository.cs",
+              "DocumentMoniker": "D:\\Workspace\\VNWalks\\VNWalks\\VNWalks.API\\Repositories\\IRegionRepository.cs",
+              "RelativeDocumentMoniker": "VNWalks.API\\Repositories\\IRegionRepository.cs",
+              "ToolTip": "D:\\Workspace\\VNWalks\\VNWalks\\VNWalks.API\\Repositories\\IRegionRepository.cs",
+              "RelativeToolTip": "VNWalks.API\\Repositories\\IRegionRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T15:58:52.341Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "UpdateRegionRequestDto.cs",
               "DocumentMoniker": "D:\\Workspace\\VNWalks\\VNWalks\\VNWalks.API\\Models\\DTO\\UpdateRegionRequestDto.cs",
               "RelativeDocumentMoniker": "VNWalks.API\\Models\\DTO\\UpdateRegionRequestDto.cs",
@@ -79,7 +147,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "AddRegionRequestDto.cs",
               "DocumentMoniker": "D:\\Workspace\\VNWalks\\VNWalks\\VNWalks.API\\Models\\DTO\\AddRegionRequestDto.cs",
               "RelativeDocumentMoniker": "VNWalks.API\\Models\\DTO\\AddRegionRequestDto.cs",
@@ -92,20 +160,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Region.cs",
               "DocumentMoniker": "D:\\Workspace\\VNWalks\\VNWalks\\VNWalks.API\\Models\\Domain\\Region.cs",
               "RelativeDocumentMoniker": "VNWalks.API\\Models\\Domain\\Region.cs",
               "ToolTip": "D:\\Workspace\\VNWalks\\VNWalks\\VNWalks.API\\Models\\Domain\\Region.cs",
               "RelativeToolTip": "VNWalks.API\\Models\\Domain\\Region.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-11T09:03:52.255Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "RegionDto.cs",
               "DocumentMoniker": "D:\\Workspace\\VNWalks\\VNWalks\\VNWalks.API\\Models\\DTO\\RegionDto.cs",
               "RelativeDocumentMoniker": "VNWalks.API\\Models\\DTO\\RegionDto.cs",
@@ -118,7 +186,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "WeatherForecastController.cs",
               "DocumentMoniker": "D:\\Workspace\\VNWalks\\VNWalks\\VNWalks.API\\Controllers\\WeatherForecastController.cs",
               "RelativeDocumentMoniker": "VNWalks.API\\Controllers\\WeatherForecastController.cs",
@@ -126,7 +194,8 @@
               "RelativeToolTip": "VNWalks.API\\Controllers\\WeatherForecastController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T16:36:29.049Z"
+              "WhenOpened": "2025-01-10T16:36:29.049Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -136,14 +205,14 @@
               "RelativeDocumentMoniker": "VNWalks.API\\Controllers\\RegionsController.cs",
               "ToolTip": "D:\\Workspace\\VNWalks\\VNWalks\\VNWalks.API\\Controllers\\RegionsController.cs",
               "RelativeToolTip": "VNWalks.API\\Controllers\\RegionsController.cs",
-              "ViewState": "AgIAAGQAAAAAAAAAAAAmwIIAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAQwGgAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-10T11:04:23.445Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "20250110104426_Initial Migration.cs",
               "DocumentMoniker": "D:\\Workspace\\VNWalks\\VNWalks\\VNWalks.API\\Migrations\\20250110104426_Initial Migration.cs",
               "RelativeDocumentMoniker": "VNWalks.API\\Migrations\\20250110104426_Initial Migration.cs",
@@ -151,7 +220,8 @@
               "RelativeToolTip": "VNWalks.API\\Migrations\\20250110104426_Initial Migration.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T10:44:27.226Z"
+              "WhenOpened": "2025-01-10T10:44:27.226Z",
+              "EditorCaption": ""
             }
           ]
         }
