@@ -8,9 +8,17 @@ namespace VNWalks.API.Mappings
     {
         public AutoMapperProfiles()
         {
+            // Region
             CreateMap<Region, RegionDto>().ReverseMap();
             CreateMap<AddRegionRequestDto, Region>().ReverseMap();
             CreateMap<UpdateRegionRequestDto, Region>().ReverseMap();
+
+            // Walk
+            CreateMap<Walk, WalkDto>().ReverseMap();
+            CreateMap<AddWalkRequestDto, Walk>().ReverseMap();
+
+            // Difficulty
+            CreateMap<Difficulty, DifficultyDto>().ReverseMap();
         }
     }
 }

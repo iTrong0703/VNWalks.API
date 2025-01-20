@@ -14,13 +14,11 @@ namespace VNWalks.API.Controllers
     [ApiController]
     public class RegionsController : ControllerBase
     {
-        private readonly AppDbContext _dbContext;
         private readonly IRegionRepository _regionRepository;
         private readonly IMapper _mapper;
 
-        public RegionsController(AppDbContext dbContext, IRegionRepository regionRepository, IMapper mapper)
+        public RegionsController(IRegionRepository regionRepository, IMapper mapper)
         {
-            _dbContext = dbContext;
             _regionRepository = regionRepository;
             _mapper = mapper;
         }
