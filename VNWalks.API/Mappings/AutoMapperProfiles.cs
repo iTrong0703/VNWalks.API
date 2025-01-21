@@ -16,6 +16,7 @@ namespace VNWalks.API.Mappings
             // Walk
             CreateMap<Walk, WalkDto>().ReverseMap();
             CreateMap<AddWalkRequestDto, Walk>().ReverseMap();
+            CreateMap<UpdateWalkRequestDto, Walk>().ReverseMap();
 
             // Difficulty
             CreateMap<Difficulty, DifficultyDto>().ReverseMap();
