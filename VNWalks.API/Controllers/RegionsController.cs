@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
+using VNWalks.API.CustomActionFilters;
 using VNWalks.API.Data;
 using VNWalks.API.Models.Domain;
 using VNWalks.API.Models.DTO;
@@ -67,6 +68,7 @@ namespace VNWalks.API.Controllers
         // POST: https://localhost:port/api/Regions
         // https://statoids.com/uvn.html
         [HttpPost]
+        [ValidateModel]
         public async Task<IActionResult> Create([FromBody] AddRegionRequestDto addRegionRequestDto)
         {
             var regionDomainModel = _mapper.Map<Region>(addRegionRequestDto);
@@ -79,6 +81,7 @@ namespace VNWalks.API.Controllers
         // PUT: https://localhost:port/api/Regions/{id}
         [HttpPut]
         [Route("{id:Guid}")]
+        [ValidateModel]
         public async Task<IActionResult> Update([FromRoute] Guid id, [FromBody] UpdateRegionRequestDto updateRegionRequestDto)
         {
             var regionDomainModel = _mapper.Map<Region>(updateRegionRequestDto);

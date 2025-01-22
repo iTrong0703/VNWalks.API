@@ -34,10 +34,17 @@ namespace VNWalks.API.Controllers
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] AddWalkRequestDto addWalkRequestDto)
         {
-            var walkDomainModel = _mapper.Map<Walk>(addWalkRequestDto);
-            walkDomainModel = await _walkRepository.CreateAsync(walkDomainModel);
-            var walkDto = _mapper.Map<WalkDto>(walkDomainModel);
-            return Ok(walkDto);
+            if (ModelState.IsValid)
+            {
+                var walkDomainModel = _mapper.Map<Walk>(addWalkRequestDto);
+                walkDomainModel = await _walkRepository.CreateAsync(walkDomainModel);
+                var walkDto = _mapper.Map<WalkDto>(walkDomainModel);
+                return Ok(walkDto);
+            }   
+            else
+            {
+                return BadRequest(ModelState);
+            }
         }
         // GET walk by id
         // GET: https://localhost:port/api/Walks/{id}
@@ -58,13 +65,20 @@ namespace VNWalks.API.Controllers
         [Route("{id:Guid}")]
         public async Task<IActionResult> Update([FromRoute] Guid id, [FromBody] UpdateWalkRequestDto updateWalkRequestDto)
         {
-            var walkDomainModel = _mapper.Map<Walk>(updateWalkRequestDto);
-            walkDomainModel = await _walkRepository.UpdateAsync(id, walkDomainModel);
-            if (walkDomainModel == null)
+            if (ModelState.IsValid)
             {
-                return NotFound();
-            }
-            return Ok(_mapper.Map<WalkDto>(walkDomainModel));
+                var walkDomainModel = _mapper.Map<Walk>(updateWalkRequestDto);
+                walkDomainModel = await _walkRepository.UpdateAsync(id, walkDomainModel);
+                if (walkDomainModel == null)
+                {
+                    return NotFound();
+                }
+                return Ok(_mapper.Map<WalkDto>(walkDomainModel));
+            }    
+            else
+            {
+                return BadRequest(ModelState);
+            }    
         }
         // Delete walk
         // DELETE: https://localhost:port/api/Walks/{id}
