@@ -20,12 +20,14 @@ namespace VNWalks.API.Controllers
             _mapper = mapper;
             _walkRepository = walkRepository;
         }
-        // GET all walks
-        // GET: https://localhost:port/api/Walks
+
+        // GET all walks or get all with filter
+        // GET: https://localhost:port/api/Walks?filterOn=Name&filterQuery=Track
         [HttpGet]
-        public async Task<IActionResult> GetAll()
+        public async Task<IActionResult> GetAll([FromQuery] string? filterOn, [FromQuery] string? filterQuery,
+            [FromQuery] string? sortBy, [FromQuery] bool? isAscending)
         {
-            var walksDomainModel = await _walkRepository.GetAllAsync();
+            var walksDomainModel = await _walkRepository.GetAllAsync(filterOn, filterQuery, sortBy, isAscending ?? true);
             return Ok(_mapper.Map<List<WalkDto>>(walksDomainModel));
         }
         // POST to create new walk
