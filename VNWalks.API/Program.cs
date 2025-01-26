@@ -1,3 +1,4 @@
+using JWTTokenGenerator;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -22,7 +23,12 @@ builder.Services.AddDbContext<AppAuthDbContext>(options => options.UseSqlServer(
 builder.Services.AddScoped<IRegionRepository, SQLRegionRepository>();
 builder.Services.AddScoped<IWalkRepository, SQLWalkRepository>();
 
+// Automapper
 builder.Services.AddAutoMapper(typeof(AutoMapperProfiles));
+
+// JWT
+builder.Services.Configure<JWTTokenGenerator.JWTSettings>(builder.Configuration.GetSection("Jwt")); // tải cấu hình từ appsettings.json vào JWTSettings
+builder.Services.AddScoped<ITokenProvider, TokenProvider>();
 
 builder.Services.AddIdentityCore<IdentityUser>()
     .AddRoles<IdentityRole>()

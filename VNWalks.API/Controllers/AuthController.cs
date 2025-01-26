@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using JWTTokenGenerator;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
@@ -11,10 +12,12 @@ namespace VNWalks.API.Controllers
     public class AuthController : ControllerBase
     {
         private readonly UserManager<IdentityUser> _userManager;
+        private readonly ITokenProvider _tokenProvider;
 
-        public AuthController(UserManager<IdentityUser> userManager)
+        public AuthController(UserManager<IdentityUser> userManager, ITokenProvider tokenProvider)
         {
             _userManager = userManager;
+            _tokenProvider = tokenProvider;
         }
         // POST to register a new user
         // POST: https://localhost:port/api/Register
@@ -53,8 +56,17 @@ namespace VNWalks.API.Controllers
                 var checkPasswordResult = await _userManager.CheckPasswordAsync(user, loginRequestDto.Password);
                 if (checkPasswordResult)
                 {
-                    // create token ...
-                    return Ok(new { message = "Login successfully" });
+                    var roles = await _userManager.GetRolesAsync(user);
+                    if (roles != null)
+                    {
+                        var jwtToken = _tokenProvider.CreateJWTToken(user, roles.ToList());
+                        var response = new LoginResponseDto
+                        {
+                            Message = "Login successfully",
+                            JWTToken = jwtToken
+                        };
+                        return Ok(response);
+                    }
                 }
             }
             return BadRequest(new { errors = "Invalid username or password" });
