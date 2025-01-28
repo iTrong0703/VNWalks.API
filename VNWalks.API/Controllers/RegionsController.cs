@@ -28,6 +28,7 @@ namespace VNWalks.API.Controllers
         // GET all regions
         // GET: https://localhost:port/api/Regions
         [HttpGet]
+        [AllowAnonymous]
         public async Task<IActionResult> GetAll()
         {
             var regionsDomainModel = await _regionRepository.GetAllAsync();
@@ -55,6 +56,7 @@ namespace VNWalks.API.Controllers
         // GET: https://localhost:port/api/Regions/{id}
         [HttpGet]
         [Route("{id:Guid}")]
+        [Authorize(Roles = "Writer,Reader")]
         public async Task<IActionResult> GetById([FromRoute] Guid id)
         {
             var regionDomainModel = await _regionRepository.GetByIdAsync(id);
@@ -71,6 +73,7 @@ namespace VNWalks.API.Controllers
         // https://statoids.com/uvn.html
         [HttpPost]
         [ValidateModel]
+        [Authorize(Roles = "Writer")]
         public async Task<IActionResult> Create([FromBody] AddRegionRequestDto addRegionRequestDto)
         {
             var regionDomainModel = _mapper.Map<Region>(addRegionRequestDto);
@@ -84,6 +87,7 @@ namespace VNWalks.API.Controllers
         [HttpPut]
         [Route("{id:Guid}")]
         [ValidateModel]
+        [Authorize(Roles = "Writer")]
         public async Task<IActionResult> Update([FromRoute] Guid id, [FromBody] UpdateRegionRequestDto updateRegionRequestDto)
         {
             var regionDomainModel = _mapper.Map<Region>(updateRegionRequestDto);
@@ -99,6 +103,7 @@ namespace VNWalks.API.Controllers
         // DELETE: https://localhost:port/api/Regions/{id}
         [HttpDelete]
         [Route("{id:Guid}")]
+        [Authorize(Roles = "Writer")]
         public async Task<IActionResult> Delete([FromRoute] Guid id)
         {
             var regionDomainModel = await _regionRepository.DeleteAsync(id);
