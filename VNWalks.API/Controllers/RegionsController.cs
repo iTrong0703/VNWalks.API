@@ -4,6 +4,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
+using System.Net;
+using System.Text.Json;
 using VNWalks.API.CustomActionFilters;
 using VNWalks.API.Data;
 using VNWalks.API.Models.Domain;
@@ -19,11 +21,13 @@ namespace VNWalks.API.Controllers
     {
         private readonly IRegionRepository _regionRepository;
         private readonly IMapper _mapper;
+        private readonly ILogger<RegionsController> _logger;
 
-        public RegionsController(IRegionRepository regionRepository, IMapper mapper)
+        public RegionsController(IRegionRepository regionRepository, IMapper mapper, ILogger<RegionsController> logger)
         {
             _regionRepository = regionRepository;
             _mapper = mapper;
+            _logger = logger;
         }
         // GET all regions
         // GET: https://localhost:port/api/Regions
@@ -31,25 +35,40 @@ namespace VNWalks.API.Controllers
         [AllowAnonymous]
         public async Task<IActionResult> GetAll()
         {
-            var regionsDomainModel = await _regionRepository.GetAllAsync();
-            // Map bằng tay
-            //var regionsDto = new List<RegionDto>();
-            //foreach (var regionDomainModel in regionsDomainModel)
-            //{
-            //    regionsDto.Add(new RegionDto()
-            //    {
-            //        Id = regionDomainModel.Id,
-            //        Code = regionDomainModel.Code,
-            //        Name = regionDomainModel.Name,
-            //        RegionImageUrl = regionDomainModel.RegionImageUrl
+            try
+            {
+                _logger.LogInformation("GetAll Regions Action Method");
 
-            //    });
-            //}
+                var regionsDomainModel = await _regionRepository.GetAllAsync();
 
-            // Automapper
-            var regionsDto = _mapper.Map<List<RegionDto>>(regionsDomainModel);
+                #region Map bằng tay
+                // Map bằng tay
+                //var regionsDto = new List<RegionDto>();
+                //foreach (var regionDomainModel in regionsDomainModel)
+                //{
+                //    regionsDto.Add(new RegionDto()
+                //    {
+                //        Id = regionDomainModel.Id,
+                //        Code = regionDomainModel.Code,
+                //        Name = regionDomainModel.Name,
+                //        RegionImageUrl = regionDomainModel.RegionImageUrl
 
-            return Ok(regionsDto);
+                //    });
+                //}
+                #endregion
+
+                _logger.LogInformation($"Finished GetAll Regions request with data: {JsonSerializer.Serialize(regionsDomainModel)}");
+
+                // Automapper
+                var regionsDto = _mapper.Map<List<RegionDto>>(regionsDomainModel);
+
+                return Ok(regionsDto);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, ex.Message);
+                throw;
+            }
         }
 
         // GET region by id

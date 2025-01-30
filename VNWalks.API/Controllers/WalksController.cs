@@ -28,6 +28,7 @@ namespace VNWalks.API.Controllers
             [FromQuery] string? sortBy, [FromQuery] bool? isAscending,
             [FromQuery] int pageNumber = 1, [FromQuery] int pageSize = 5)
         {
+            throw new Exception("Đây là lỗi");
             var walksDomainModel = await _walkRepository.GetAllAsync(filterOn, filterQuery, sortBy, isAscending ?? true, 
                 pageNumber, pageSize);
             return Ok(_mapper.Map<List<WalkDto>>(walksDomainModel));
@@ -90,7 +91,7 @@ namespace VNWalks.API.Controllers
         [Route("{id:Guid}")]
         public async Task<IActionResult> Delete([FromRoute] Guid id)
         {
-            var walkDomainModel = _walkRepository.DeleteAsync(id);
+            var walkDomainModel = await _walkRepository.DeleteAsync(id);
             if (walkDomainModel == null)
             {
                 return NotFound();
