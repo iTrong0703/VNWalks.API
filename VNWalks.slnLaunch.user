@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "VNWalks.API\\VNWalks.API.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "VNWalks.UI\\VNWalks.UI.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
