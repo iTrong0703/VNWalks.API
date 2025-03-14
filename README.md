@@ -2,7 +2,7 @@
 
 ## Kiến trúc và tổ chức
 
-Dự án được tổ chức theo kiến trúc tách biệt (Clean Architecture) với các layer rõ ràng:
+Dự án được tổ chức với các layer rõ ràng, theo Repository Pattern:
 
 -   **Controllers:** Chứa các endpoint API, xử lý logic giao tiếp.
 -   **Repositories:** Quản lý truy vấn và giao tiếp với cơ sở dữ liệu.
